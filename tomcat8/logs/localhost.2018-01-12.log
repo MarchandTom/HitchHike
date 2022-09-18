@@ -1,0 +1,2798 @@
+12-Jan-2018 08:32:03.196 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 21 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+18: 	con = DriverManager.getConnection(url,nom,mdp);
+19: 	stmt = con.createStatement();
+20: 
+21: 	String tmp request.getParameter("type");
+22: 	char type;
+23: 	if(tmp==null){
+24: 		type="E";
+
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /plats.jsp
+Type mismatch: cannot convert from String to char
+21: 	String tmp request.getParameter("type");
+22: 	char type;
+23: 	if(tmp==null){
+24: 		type="E";
+25: 	}else{
+26: 		type=tmp.charAt(0);
+27: 	}
+
+
+Une erreur s'est produite à la ligne: 40 dans le fichier jsp: /plats.jsp
+Duplicate local variable nom
+37: 	<form>
+38: 		<% while(rs.next()){ 
+39: 			String pno=rs.getString("pno");
+40: 			String nom=rs.getString("libelle");
+41: 		%>
+42: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nom%><br>
+43: 		<% } %>
+
+
+Une erreur s'est produite à la ligne: 57 dans le fichier jsp: /plats.jsp
+p cannot be resolved to a variable
+54: 	 	}
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+
+
+Une erreur s'est produite à la ligne: 58 dans le fichier jsp: /plats.jsp
+jeu cannot be resolved
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+61: 		out.println(i);%></br><%}
+
+
+Une erreur s'est produite à la ligne: 58 dans le fichier jsp: /plats.jsp
+jeu cannot be resolved
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+61: 		out.println(i);%></br><%}
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 21 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+18: 	con = DriverManager.getConnection(url,nom,mdp);
+19: 	stmt = con.createStatement();
+20: 
+21: 	String tmp request.getParameter("type");
+22: 	char type;
+23: 	if(tmp==null){
+24: 		type="E";
+
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /plats.jsp
+Type mismatch: cannot convert from String to char
+21: 	String tmp request.getParameter("type");
+22: 	char type;
+23: 	if(tmp==null){
+24: 		type="E";
+25: 	}else{
+26: 		type=tmp.charAt(0);
+27: 	}
+
+
+Une erreur s'est produite à la ligne: 40 dans le fichier jsp: /plats.jsp
+Duplicate local variable nom
+37: 	<form>
+38: 		<% while(rs.next()){ 
+39: 			String pno=rs.getString("pno");
+40: 			String nom=rs.getString("libelle");
+41: 		%>
+42: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nom%><br>
+43: 		<% } %>
+
+
+Une erreur s'est produite à la ligne: 57 dans le fichier jsp: /plats.jsp
+p cannot be resolved to a variable
+54: 	 	}
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+
+
+Une erreur s'est produite à la ligne: 58 dans le fichier jsp: /plats.jsp
+jeu cannot be resolved
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+61: 		out.println(i);%></br><%}
+
+
+Une erreur s'est produite à la ligne: 58 dans le fichier jsp: /plats.jsp
+jeu cannot be resolved
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+61: 		out.println(i);%></br><%}
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+12-Jan-2018 08:32:32.854 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /plats.jsp
+Type mismatch: cannot convert from String to char
+21: 	String tmp = request.getParameter("type");
+22: 	char type;
+23: 	if(tmp==null){
+24: 		type="E";
+25: 	}else{
+26: 		type=tmp.charAt(0);
+27: 	}
+
+
+Une erreur s'est produite à la ligne: 40 dans le fichier jsp: /plats.jsp
+Duplicate local variable nom
+37: 	<form>
+38: 		<% while(rs.next()){ 
+39: 			String pno=rs.getString("pno");
+40: 			String nom=rs.getString("libelle");
+41: 		%>
+42: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nom%><br>
+43: 		<% } %>
+
+
+Une erreur s'est produite à la ligne: 57 dans le fichier jsp: /plats.jsp
+p cannot be resolved to a variable
+54: 	 	}
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+
+
+Une erreur s'est produite à la ligne: 58 dans le fichier jsp: /plats.jsp
+jeu cannot be resolved
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+61: 		out.println(i);%></br><%}
+
+
+Une erreur s'est produite à la ligne: 58 dans le fichier jsp: /plats.jsp
+jeu cannot be resolved
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+61: 		out.println(i);%></br><%}
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /plats.jsp
+Type mismatch: cannot convert from String to char
+21: 	String tmp = request.getParameter("type");
+22: 	char type;
+23: 	if(tmp==null){
+24: 		type="E";
+25: 	}else{
+26: 		type=tmp.charAt(0);
+27: 	}
+
+
+Une erreur s'est produite à la ligne: 40 dans le fichier jsp: /plats.jsp
+Duplicate local variable nom
+37: 	<form>
+38: 		<% while(rs.next()){ 
+39: 			String pno=rs.getString("pno");
+40: 			String nom=rs.getString("libelle");
+41: 		%>
+42: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nom%><br>
+43: 		<% } %>
+
+
+Une erreur s'est produite à la ligne: 57 dans le fichier jsp: /plats.jsp
+p cannot be resolved to a variable
+54: 	 	}
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+
+
+Une erreur s'est produite à la ligne: 58 dans le fichier jsp: /plats.jsp
+jeu cannot be resolved
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+61: 		out.println(i);%></br><%}
+
+
+Une erreur s'est produite à la ligne: 58 dans le fichier jsp: /plats.jsp
+jeu cannot be resolved
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+61: 		out.println(i);%></br><%}
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+12-Jan-2018 08:32:46.798 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 40 dans le fichier jsp: /plats.jsp
+Duplicate local variable nom
+37: 	<form>
+38: 		<% while(rs.next()){ 
+39: 			String pno=rs.getString("pno");
+40: 			String nom=rs.getString("libelle");
+41: 		%>
+42: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nom%><br>
+43: 		<% } %>
+
+
+Une erreur s'est produite à la ligne: 57 dans le fichier jsp: /plats.jsp
+p cannot be resolved to a variable
+54: 	 	}
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+
+
+Une erreur s'est produite à la ligne: 58 dans le fichier jsp: /plats.jsp
+jeu cannot be resolved
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+61: 		out.println(i);%></br><%}
+
+
+Une erreur s'est produite à la ligne: 58 dans le fichier jsp: /plats.jsp
+jeu cannot be resolved
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+61: 		out.println(i);%></br><%}
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 40 dans le fichier jsp: /plats.jsp
+Duplicate local variable nom
+37: 	<form>
+38: 		<% while(rs.next()){ 
+39: 			String pno=rs.getString("pno");
+40: 			String nom=rs.getString("libelle");
+41: 		%>
+42: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nom%><br>
+43: 		<% } %>
+
+
+Une erreur s'est produite à la ligne: 57 dans le fichier jsp: /plats.jsp
+p cannot be resolved to a variable
+54: 	 	}
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+
+
+Une erreur s'est produite à la ligne: 58 dans le fichier jsp: /plats.jsp
+jeu cannot be resolved
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+61: 		out.println(i);%></br><%}
+
+
+Une erreur s'est produite à la ligne: 58 dans le fichier jsp: /plats.jsp
+jeu cannot be resolved
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+61: 		out.println(i);%></br><%}
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+12-Jan-2018 08:33:26.245 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 57 dans le fichier jsp: /plats.jsp
+p cannot be resolved to a variable
+54: 	 	}
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+
+
+Une erreur s'est produite à la ligne: 58 dans le fichier jsp: /plats.jsp
+jeu cannot be resolved
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+61: 		out.println(i);%></br><%}
+
+
+Une erreur s'est produite à la ligne: 58 dans le fichier jsp: /plats.jsp
+jeu cannot be resolved
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+61: 		out.println(i);%></br><%}
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 57 dans le fichier jsp: /plats.jsp
+p cannot be resolved to a variable
+54: 	 	}
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+
+
+Une erreur s'est produite à la ligne: 58 dans le fichier jsp: /plats.jsp
+jeu cannot be resolved
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+61: 		out.println(i);%></br><%}
+
+
+Une erreur s'est produite à la ligne: 58 dans le fichier jsp: /plats.jsp
+jeu cannot be resolved
+55: 	 %>
+56: 	</table> -->
+57: 	<!-- <%out.println(p);%>
+58: 	<h1>Vous: <%=jeu.getPointsHumain()%>; ordinateur: <%=jeu.getPointsOrdi()%></h1>
+59: 	<%
+60: 	for (int i=1;i<=9;i++){
+61: 		out.println(i);%></br><%}
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+12-Jan-2018 09:08:51.588 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 41 dans le fichier jsp: /plats.jsp
+The method valueOf(String) in the type Integer is not applicable for the arguments (Object)
+38: 		<% while(rs.next()){ 
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if(Integer.valueOf(session.getAttribute("choixE"))==pno || 
+42: 			Integer.valueOf(session.getAttribute("choixP"))==pno || Integer.valueOf(session.getAttribute("choixD"))==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+The method valueOf(String) in the type Integer is not applicable for the arguments (Object)
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if(Integer.valueOf(session.getAttribute("choixE"))==pno || 
+42: 			Integer.valueOf(session.getAttribute("choixP"))==pno || Integer.valueOf(session.getAttribute("choixD"))==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+The method valueOf(String) in the type Integer is not applicable for the arguments (Object)
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if(Integer.valueOf(session.getAttribute("choixE"))==pno || 
+42: 			Integer.valueOf(session.getAttribute("choixP"))==pno || Integer.valueOf(session.getAttribute("choixD"))==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 41 dans le fichier jsp: /plats.jsp
+The method valueOf(String) in the type Integer is not applicable for the arguments (Object)
+38: 		<% while(rs.next()){ 
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if(Integer.valueOf(session.getAttribute("choixE"))==pno || 
+42: 			Integer.valueOf(session.getAttribute("choixP"))==pno || Integer.valueOf(session.getAttribute("choixD"))==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+The method valueOf(String) in the type Integer is not applicable for the arguments (Object)
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if(Integer.valueOf(session.getAttribute("choixE"))==pno || 
+42: 			Integer.valueOf(session.getAttribute("choixP"))==pno || Integer.valueOf(session.getAttribute("choixD"))==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+The method valueOf(String) in the type Integer is not applicable for the arguments (Object)
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if(Integer.valueOf(session.getAttribute("choixE"))==pno || 
+42: 			Integer.valueOf(session.getAttribute("choixP"))==pno || Integer.valueOf(session.getAttribute("choixD"))==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+12-Jan-2018 09:09:23.723 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 41 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+38: 		<% while(rs.next()){ 
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if((int)session.getAttribute("choixE")==pno || 
+42: 			Integer.valueOf(session.getAttribute("choixP"))==pno || Integer.valueOf(session.getAttribute("choixD"))==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+The method valueOf(String) in the type Integer is not applicable for the arguments (Object)
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if((int)session.getAttribute("choixE")==pno || 
+42: 			Integer.valueOf(session.getAttribute("choixP"))==pno || Integer.valueOf(session.getAttribute("choixD"))==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+The method valueOf(String) in the type Integer is not applicable for the arguments (Object)
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if((int)session.getAttribute("choixE")==pno || 
+42: 			Integer.valueOf(session.getAttribute("choixP"))==pno || Integer.valueOf(session.getAttribute("choixD"))==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 41 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+38: 		<% while(rs.next()){ 
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if((int)session.getAttribute("choixE")==pno || 
+42: 			Integer.valueOf(session.getAttribute("choixP"))==pno || Integer.valueOf(session.getAttribute("choixD"))==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+The method valueOf(String) in the type Integer is not applicable for the arguments (Object)
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if((int)session.getAttribute("choixE")==pno || 
+42: 			Integer.valueOf(session.getAttribute("choixP"))==pno || Integer.valueOf(session.getAttribute("choixD"))==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+The method valueOf(String) in the type Integer is not applicable for the arguments (Object)
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if((int)session.getAttribute("choixE")==pno || 
+42: 			Integer.valueOf(session.getAttribute("choixP"))==pno || Integer.valueOf(session.getAttribute("choixD"))==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+12-Jan-2018 09:09:47.642 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 41 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+38: 		<% while(rs.next()){ 
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if((int)session.getAttribute("choixE")==pno || 
+42: 			(int)session.getAttribute("choixP")==pno || (int)session.getAttribute("choixD")==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if((int)session.getAttribute("choixE")==pno || 
+42: 			(int)session.getAttribute("choixP")==pno || (int)session.getAttribute("choixD")==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if((int)session.getAttribute("choixE")==pno || 
+42: 			(int)session.getAttribute("choixP")==pno || (int)session.getAttribute("choixD")==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 41 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+38: 		<% while(rs.next()){ 
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if((int)session.getAttribute("choixE")==pno || 
+42: 			(int)session.getAttribute("choixP")==pno || (int)session.getAttribute("choixD")==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if((int)session.getAttribute("choixE")==pno || 
+42: 			(int)session.getAttribute("choixP")==pno || (int)session.getAttribute("choixD")==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if((int)session.getAttribute("choixE")==pno || 
+42: 			(int)session.getAttribute("choixP")==pno || (int)session.getAttribute("choixD")==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+12-Jan-2018 09:10:32.166 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 41 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+38: 		<% while(rs.next()){ 
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if(((int)session.getAttribute("choixE"))==pno || 
+42: 			(int)session.getAttribute("choixP")==pno || (int)session.getAttribute("choixD")==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if(((int)session.getAttribute("choixE"))==pno || 
+42: 			(int)session.getAttribute("choixP")==pno || (int)session.getAttribute("choixD")==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if(((int)session.getAttribute("choixE"))==pno || 
+42: 			(int)session.getAttribute("choixP")==pno || (int)session.getAttribute("choixD")==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 41 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+38: 		<% while(rs.next()){ 
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if(((int)session.getAttribute("choixE"))==pno || 
+42: 			(int)session.getAttribute("choixP")==pno || (int)session.getAttribute("choixD")==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if(((int)session.getAttribute("choixE"))==pno || 
+42: 			(int)session.getAttribute("choixP")==pno || (int)session.getAttribute("choixD")==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if(((int)session.getAttribute("choixE"))==pno || 
+42: 			(int)session.getAttribute("choixP")==pno || (int)session.getAttribute("choixD")==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+12-Jan-2018 09:11:05.455 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if((session.getAttribute("choixE").equals(""+pno) || 
+42: 			(int)session.getAttribute("choixP")==pno || (int)session.getAttribute("choixD")==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if((session.getAttribute("choixE").equals(""+pno) || 
+42: 			(int)session.getAttribute("choixP")==pno || (int)session.getAttribute("choixD")==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+Syntax error, insert ") Statement" to complete IfStatement
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if((session.getAttribute("choixE").equals(""+pno) || 
+42: 			(int)session.getAttribute("choixP")==pno || (int)session.getAttribute("choixD")==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+
+
+Une erreur s'est produite à la ligne: 45 dans le fichier jsp: /plats.jsp
+Syntax error on token "else", delete this token
+42: 			(int)session.getAttribute("choixP")==pno || (int)session.getAttribute("choixD")==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+46: 		<input type="radio" name="choix" value="<%=pno%>" checked> <%=nomPlat%><br>
+47: 		<% }} %>
+48: 		<input type="submit" value="Valider">
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if((session.getAttribute("choixE").equals(""+pno) || 
+42: 			(int)session.getAttribute("choixP")==pno || (int)session.getAttribute("choixD")==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if((session.getAttribute("choixE").equals(""+pno) || 
+42: 			(int)session.getAttribute("choixP")==pno || (int)session.getAttribute("choixD")==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+Syntax error, insert ") Statement" to complete IfStatement
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			if((session.getAttribute("choixE").equals(""+pno) || 
+42: 			(int)session.getAttribute("choixP")==pno || (int)session.getAttribute("choixD")==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+
+
+Une erreur s'est produite à la ligne: 45 dans le fichier jsp: /plats.jsp
+Syntax error on token "else", delete this token
+42: 			(int)session.getAttribute("choixP")==pno || (int)session.getAttribute("choixD")==pno){
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% }else{ %>
+46: 		<input type="radio" name="choix" value="<%=pno%>" checked> <%=nomPlat%><br>
+47: 		<% }} %>
+48: 		<input type="submit" value="Valider">
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+12-Jan-2018 09:15:39.433 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+Type mismatch: cannot convert from Object to String
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			
+42: 			String choixE= session.getAttribute("choixE");
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% } %>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 42 dans le fichier jsp: /plats.jsp
+Type mismatch: cannot convert from Object to String
+39: 			String pno=rs.getString("pno");
+40: 			String nomPlat=rs.getString("libelle");
+41: 			
+42: 			String choixE= session.getAttribute("choixE");
+43: 		%>
+44: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+45: 		<% } %>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+12-Jan-2018 09:17:49.365 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 51 dans le fichier jsp: /plats.jsp
+choixE cannot be resolved to a variable
+48: 		<input type="submit" value="Valider">
+49: 	</form> 
+50: 
+51: 	<%out.println(choixE+"  "+choixP+"  "+choixD);%>
+52: 
+53: 	<%con.close();%>
+54: </body>
+
+
+Une erreur s'est produite à la ligne: 51 dans le fichier jsp: /plats.jsp
+choixP cannot be resolved to a variable
+48: 		<input type="submit" value="Valider">
+49: 	</form> 
+50: 
+51: 	<%out.println(choixE+"  "+choixP+"  "+choixD);%>
+52: 
+53: 	<%con.close();%>
+54: </body>
+
+
+Une erreur s'est produite à la ligne: 51 dans le fichier jsp: /plats.jsp
+choixD cannot be resolved to a variable
+48: 		<input type="submit" value="Valider">
+49: 	</form> 
+50: 
+51: 	<%out.println(choixE+"  "+choixP+"  "+choixD);%>
+52: 
+53: 	<%con.close();%>
+54: </body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 51 dans le fichier jsp: /plats.jsp
+choixE cannot be resolved to a variable
+48: 		<input type="submit" value="Valider">
+49: 	</form> 
+50: 
+51: 	<%out.println(choixE+"  "+choixP+"  "+choixD);%>
+52: 
+53: 	<%con.close();%>
+54: </body>
+
+
+Une erreur s'est produite à la ligne: 51 dans le fichier jsp: /plats.jsp
+choixP cannot be resolved to a variable
+48: 		<input type="submit" value="Valider">
+49: 	</form> 
+50: 
+51: 	<%out.println(choixE+"  "+choixP+"  "+choixD);%>
+52: 
+53: 	<%con.close();%>
+54: </body>
+
+
+Une erreur s'est produite à la ligne: 51 dans le fichier jsp: /plats.jsp
+choixD cannot be resolved to a variable
+48: 		<input type="submit" value="Valider">
+49: 	</form> 
+50: 
+51: 	<%out.println(choixE+"  "+choixP+"  "+choixD);%>
+52: 
+53: 	<%con.close();%>
+54: </body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+12-Jan-2018 09:18:49.319 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 51 dans le fichier jsp: /plats.jsp
+choixE cannot be resolved to a variable
+48: 		<input type="submit" value="Valider">
+49: 	</form> 
+50: 
+51: 	<%out.println(choixE+"  "+choixP+"  "+choixD);%>
+52: 
+53: 	<%con.close();%>
+54: </body>
+
+
+Une erreur s'est produite à la ligne: 51 dans le fichier jsp: /plats.jsp
+choixP cannot be resolved to a variable
+48: 		<input type="submit" value="Valider">
+49: 	</form> 
+50: 
+51: 	<%out.println(choixE+"  "+choixP+"  "+choixD);%>
+52: 
+53: 	<%con.close();%>
+54: </body>
+
+
+Une erreur s'est produite à la ligne: 51 dans le fichier jsp: /plats.jsp
+choixD cannot be resolved to a variable
+48: 		<input type="submit" value="Valider">
+49: 	</form> 
+50: 
+51: 	<%out.println(choixE+"  "+choixP+"  "+choixD);%>
+52: 
+53: 	<%con.close();%>
+54: </body>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 51 dans le fichier jsp: /plats.jsp
+choixE cannot be resolved to a variable
+48: 		<input type="submit" value="Valider">
+49: 	</form> 
+50: 
+51: 	<%out.println(choixE+"  "+choixP+"  "+choixD);%>
+52: 
+53: 	<%con.close();%>
+54: </body>
+
+
+Une erreur s'est produite à la ligne: 51 dans le fichier jsp: /plats.jsp
+choixP cannot be resolved to a variable
+48: 		<input type="submit" value="Valider">
+49: 	</form> 
+50: 
+51: 	<%out.println(choixE+"  "+choixP+"  "+choixD);%>
+52: 
+53: 	<%con.close();%>
+54: </body>
+
+
+Une erreur s'est produite à la ligne: 51 dans le fichier jsp: /plats.jsp
+choixD cannot be resolved to a variable
+48: 		<input type="submit" value="Valider">
+49: 	</form> 
+50: 
+51: 	<%out.println(choixE+"  "+choixP+"  "+choixD);%>
+52: 
+53: 	<%con.close();%>
+54: </body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+12-Jan-2018 09:22:00.212 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 46 dans le fichier jsp: /plats.jsp
+Duplicate local variable tmp
+43: 			int choixP;
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp=session.getAttribute("choixP");
+
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp=session.getAttribute("choixP");
+50: 			if(tmp!=null){choixP=(int)tmp}
+
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp=session.getAttribute("choixP");
+50: 			if(tmp!=null){choixP=(int)tmp}
+
+
+Une erreur s'est produite à la ligne: 49 dans le fichier jsp: /plats.jsp
+Duplicate local variable tmp
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp=session.getAttribute("choixP");
+50: 			if(tmp!=null){choixP=(int)tmp}
+51: 
+52: 			Object tmp=session.getAttribute("choixD");
+
+
+Une erreur s'est produite à la ligne: 50 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp=session.getAttribute("choixP");
+50: 			if(tmp!=null){choixP=(int)tmp}
+51: 
+52: 			Object tmp=session.getAttribute("choixD");
+53: 			if(tmp!=null){choixD=(int)tmp}
+
+
+Une erreur s'est produite à la ligne: 50 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp=session.getAttribute("choixP");
+50: 			if(tmp!=null){choixP=(int)tmp}
+51: 
+52: 			Object tmp=session.getAttribute("choixD");
+53: 			if(tmp!=null){choixD=(int)tmp}
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /plats.jsp
+Duplicate local variable tmp
+49: 			Object tmp=session.getAttribute("choixP");
+50: 			if(tmp!=null){choixP=(int)tmp}
+51: 
+52: 			Object tmp=session.getAttribute("choixD");
+53: 			if(tmp!=null){choixD=(int)tmp}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+
+
+Une erreur s'est produite à la ligne: 53 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+50: 			if(tmp!=null){choixP=(int)tmp}
+51: 
+52: 			Object tmp=session.getAttribute("choixD");
+53: 			if(tmp!=null){choixD=(int)tmp}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+
+
+Une erreur s'est produite à la ligne: 53 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+50: 			if(tmp!=null){choixP=(int)tmp}
+51: 
+52: 			Object tmp=session.getAttribute("choixD");
+53: 			if(tmp!=null){choixD=(int)tmp}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 46 dans le fichier jsp: /plats.jsp
+Duplicate local variable tmp
+43: 			int choixP;
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp=session.getAttribute("choixP");
+
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp=session.getAttribute("choixP");
+50: 			if(tmp!=null){choixP=(int)tmp}
+
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp=session.getAttribute("choixP");
+50: 			if(tmp!=null){choixP=(int)tmp}
+
+
+Une erreur s'est produite à la ligne: 49 dans le fichier jsp: /plats.jsp
+Duplicate local variable tmp
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp=session.getAttribute("choixP");
+50: 			if(tmp!=null){choixP=(int)tmp}
+51: 
+52: 			Object tmp=session.getAttribute("choixD");
+
+
+Une erreur s'est produite à la ligne: 50 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp=session.getAttribute("choixP");
+50: 			if(tmp!=null){choixP=(int)tmp}
+51: 
+52: 			Object tmp=session.getAttribute("choixD");
+53: 			if(tmp!=null){choixD=(int)tmp}
+
+
+Une erreur s'est produite à la ligne: 50 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp=session.getAttribute("choixP");
+50: 			if(tmp!=null){choixP=(int)tmp}
+51: 
+52: 			Object tmp=session.getAttribute("choixD");
+53: 			if(tmp!=null){choixD=(int)tmp}
+
+
+Une erreur s'est produite à la ligne: 52 dans le fichier jsp: /plats.jsp
+Duplicate local variable tmp
+49: 			Object tmp=session.getAttribute("choixP");
+50: 			if(tmp!=null){choixP=(int)tmp}
+51: 
+52: 			Object tmp=session.getAttribute("choixD");
+53: 			if(tmp!=null){choixD=(int)tmp}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+
+
+Une erreur s'est produite à la ligne: 53 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+50: 			if(tmp!=null){choixP=(int)tmp}
+51: 
+52: 			Object tmp=session.getAttribute("choixD");
+53: 			if(tmp!=null){choixD=(int)tmp}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+
+
+Une erreur s'est produite à la ligne: 53 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+50: 			if(tmp!=null){choixP=(int)tmp}
+51: 
+52: 			Object tmp=session.getAttribute("choixD");
+53: 			if(tmp!=null){choixD=(int)tmp}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+12-Jan-2018 09:22:16.757 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 46 dans le fichier jsp: /plats.jsp
+Duplicate local variable tmp
+43: 			int choixP;
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			tmp=session.getAttribute("choixP");
+
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			tmp=session.getAttribute("choixP");
+50: 			if(tmp!=null){choixP=(int)tmp}
+
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			tmp=session.getAttribute("choixP");
+50: 			if(tmp!=null){choixP=(int)tmp}
+
+
+Une erreur s'est produite à la ligne: 50 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			tmp=session.getAttribute("choixP");
+50: 			if(tmp!=null){choixP=(int)tmp}
+51: 
+52: 			tmp=session.getAttribute("choixD");
+53: 			if(tmp!=null){choixD=(int)tmp}
+
+
+Une erreur s'est produite à la ligne: 50 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			tmp=session.getAttribute("choixP");
+50: 			if(tmp!=null){choixP=(int)tmp}
+51: 
+52: 			tmp=session.getAttribute("choixD");
+53: 			if(tmp!=null){choixD=(int)tmp}
+
+
+Une erreur s'est produite à la ligne: 53 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+50: 			if(tmp!=null){choixP=(int)tmp}
+51: 
+52: 			tmp=session.getAttribute("choixD");
+53: 			if(tmp!=null){choixD=(int)tmp}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+
+
+Une erreur s'est produite à la ligne: 53 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+50: 			if(tmp!=null){choixP=(int)tmp}
+51: 
+52: 			tmp=session.getAttribute("choixD");
+53: 			if(tmp!=null){choixD=(int)tmp}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 46 dans le fichier jsp: /plats.jsp
+Duplicate local variable tmp
+43: 			int choixP;
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			tmp=session.getAttribute("choixP");
+
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			tmp=session.getAttribute("choixP");
+50: 			if(tmp!=null){choixP=(int)tmp}
+
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			tmp=session.getAttribute("choixP");
+50: 			if(tmp!=null){choixP=(int)tmp}
+
+
+Une erreur s'est produite à la ligne: 50 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			tmp=session.getAttribute("choixP");
+50: 			if(tmp!=null){choixP=(int)tmp}
+51: 
+52: 			tmp=session.getAttribute("choixD");
+53: 			if(tmp!=null){choixD=(int)tmp}
+
+
+Une erreur s'est produite à la ligne: 50 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			tmp=session.getAttribute("choixP");
+50: 			if(tmp!=null){choixP=(int)tmp}
+51: 
+52: 			tmp=session.getAttribute("choixD");
+53: 			if(tmp!=null){choixD=(int)tmp}
+
+
+Une erreur s'est produite à la ligne: 53 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+50: 			if(tmp!=null){choixP=(int)tmp}
+51: 
+52: 			tmp=session.getAttribute("choixD");
+53: 			if(tmp!=null){choixD=(int)tmp}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+
+
+Une erreur s'est produite à la ligne: 53 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+50: 			if(tmp!=null){choixP=(int)tmp}
+51: 
+52: 			tmp=session.getAttribute("choixD");
+53: 			if(tmp!=null){choixD=(int)tmp}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+12-Jan-2018 09:22:55.375 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 46 dans le fichier jsp: /plats.jsp
+Duplicate local variable tmp
+43: 			int choixP;
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 50 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 50 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 53 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+
+
+Une erreur s'est produite à la ligne: 53 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 46 dans le fichier jsp: /plats.jsp
+Duplicate local variable tmp
+43: 			int choixP;
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 50 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 50 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 53 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+
+
+Une erreur s'est produite à la ligne: 53 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+12-Jan-2018 09:22:59.557 SEVERE [http-nio-8080-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 46 dans le fichier jsp: /plats.jsp
+Duplicate local variable tmp
+43: 			int choixP;
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 50 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 50 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 53 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+
+
+Une erreur s'est produite à la ligne: 53 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 46 dans le fichier jsp: /plats.jsp
+Duplicate local variable tmp
+43: 			int choixP;
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+44: 			int choixD;
+45: 
+46: 			Object tmp=session.getAttribute("choixE");
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 50 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 50 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+47: 			if(tmp!=null){choixE=(int)tmp}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 53 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+
+
+Une erreur s'est produite à la ligne: 53 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+12-Jan-2018 09:23:14.716 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+44: 			int choixD;
+45: 
+46: 			Object tmp0=session.getAttribute("choixE");
+47: 			if(tmp0!=null){choixE=(int)tmp0}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+44: 			int choixD;
+45: 
+46: 			Object tmp0=session.getAttribute("choixE");
+47: 			if(tmp0!=null){choixE=(int)tmp0}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 50 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+47: 			if(tmp0!=null){choixE=(int)tmp0}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 50 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+47: 			if(tmp0!=null){choixE=(int)tmp0}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 53 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+
+
+Une erreur s'est produite à la ligne: 53 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+44: 			int choixD;
+45: 
+46: 			Object tmp0=session.getAttribute("choixE");
+47: 			if(tmp0!=null){choixE=(int)tmp0}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 47 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+44: 			int choixD;
+45: 
+46: 			Object tmp0=session.getAttribute("choixE");
+47: 			if(tmp0!=null){choixE=(int)tmp0}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 50 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+47: 			if(tmp0!=null){choixE=(int)tmp0}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 50 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+47: 			if(tmp0!=null){choixE=(int)tmp0}
+48: 
+49: 			Object tmp1=session.getAttribute("choixP");
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+
+
+Une erreur s'est produite à la ligne: 53 dans le fichier jsp: /plats.jsp
+Syntax error, insert ":: IdentifierOrNew" to complete ReferenceExpression
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+
+
+Une erreur s'est produite à la ligne: 53 dans le fichier jsp: /plats.jsp
+Syntax error, insert ";" to complete BlockStatements
+50: 			if(tmp1!=null){choixP=(int)tmp1}
+51: 
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp1}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+12-Jan-2018 09:23:37.869 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 55 dans le fichier jsp: /plats.jsp
+The local variable choixE may not have been initialized
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp2;}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+57: 		%>
+58: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+
+
+Une erreur s'est produite à la ligne: 55 dans le fichier jsp: /plats.jsp
+The local variable choixP may not have been initialized
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp2;}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+57: 		%>
+58: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+
+
+Une erreur s'est produite à la ligne: 55 dans le fichier jsp: /plats.jsp
+The local variable choixD may not have been initialized
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp2;}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+57: 		%>
+58: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 55 dans le fichier jsp: /plats.jsp
+The local variable choixE may not have been initialized
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp2;}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+57: 		%>
+58: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+
+
+Une erreur s'est produite à la ligne: 55 dans le fichier jsp: /plats.jsp
+The local variable choixP may not have been initialized
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp2;}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+57: 		%>
+58: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+
+
+Une erreur s'est produite à la ligne: 55 dans le fichier jsp: /plats.jsp
+The local variable choixD may not have been initialized
+52: 			Object tmp2=session.getAttribute("choixD");
+53: 			if(tmp2!=null){choixD=(int)tmp2;}
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+57: 		%>
+58: 		<input type="radio" name="choix" value="<%=pno%>"> <%=nomPlat%><br>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+12-Jan-2018 09:25:52.603 SEVERE [http-nio-8080-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 57 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+57: 			if(choixE==pno || choixP==pno || choixD==pno){
+58: 		%>
+59: 		<input type="radio" name="choix" value="<%=pno%>" checked> <%=nomPlat%><br>
+60: 		<% }else{ %>
+
+
+Une erreur s'est produite à la ligne: 57 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+57: 			if(choixE==pno || choixP==pno || choixD==pno){
+58: 		%>
+59: 		<input type="radio" name="choix" value="<%=pno%>" checked> <%=nomPlat%><br>
+60: 		<% }else{ %>
+
+
+Une erreur s'est produite à la ligne: 57 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+57: 			if(choixE==pno || choixP==pno || choixD==pno){
+58: 		%>
+59: 		<input type="radio" name="choix" value="<%=pno%>" checked> <%=nomPlat%><br>
+60: 		<% }else{ %>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 57 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+57: 			if(choixE==pno || choixP==pno || choixD==pno){
+58: 		%>
+59: 		<input type="radio" name="choix" value="<%=pno%>" checked> <%=nomPlat%><br>
+60: 		<% }else{ %>
+
+
+Une erreur s'est produite à la ligne: 57 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+57: 			if(choixE==pno || choixP==pno || choixD==pno){
+58: 		%>
+59: 		<input type="radio" name="choix" value="<%=pno%>" checked> <%=nomPlat%><br>
+60: 		<% }else{ %>
+
+
+Une erreur s'est produite à la ligne: 57 dans le fichier jsp: /plats.jsp
+Incompatible operand types int and String
+54: 			
+55: 			out.println(choixE+"  "+choixP+"  "+choixD);
+56: 
+57: 			if(choixE==pno || choixP==pno || choixD==pno){
+58: 		%>
+59: 		<input type="radio" name="choix" value="<%=pno%>" checked> <%=nomPlat%><br>
+60: 		<% }else{ %>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+12-Jan-2018 10:01:08.585 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 73 dans le fichier jsp: /synthese.jsp
+libE cannot be resolved to a variable
+70: 	}%>
+71: <p>
+72: 
+73: Entrée:</br><%=libE%></br>
+74: Description:</br><%=desE%></br>
+75: 
+76: </p>
+
+
+Une erreur s'est produite à la ligne: 74 dans le fichier jsp: /synthese.jsp
+desE cannot be resolved to a variable
+71: <p>
+72: 
+73: Entrée:</br><%=libE%></br>
+74: Description:</br><%=desE%></br>
+75: 
+76: </p>
+77: 
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 73 dans le fichier jsp: /synthese.jsp
+libE cannot be resolved to a variable
+70: 	}%>
+71: <p>
+72: 
+73: Entrée:</br><%=libE%></br>
+74: Description:</br><%=desE%></br>
+75: 
+76: </p>
+
+
+Une erreur s'est produite à la ligne: 74 dans le fichier jsp: /synthese.jsp
+desE cannot be resolved to a variable
+71: <p>
+72: 
+73: Entrée:</br><%=libE%></br>
+74: Description:</br><%=desE%></br>
+75: 
+76: </p>
+77: 
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+12-Jan-2018 10:02:18.568 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 73 dans le fichier jsp: /synthese.jsp
+libE cannot be resolved to a variable
+70: 	}%>
+71: <p>
+72: 
+73: Entrée:</br><%out.println(libE)%></br>
+74: Description:</br><%out.println(desE)%></br>
+75: 
+76: </p>
+
+
+Une erreur s'est produite à la ligne: 73 dans le fichier jsp: /synthese.jsp
+Syntax error, insert ";" to complete Statement
+70: 	}%>
+71: <p>
+72: 
+73: Entrée:</br><%out.println(libE)%></br>
+74: Description:</br><%out.println(desE)%></br>
+75: 
+76: </p>
+
+
+Une erreur s'est produite à la ligne: 74 dans le fichier jsp: /synthese.jsp
+desE cannot be resolved to a variable
+71: <p>
+72: 
+73: Entrée:</br><%out.println(libE)%></br>
+74: Description:</br><%out.println(desE)%></br>
+75: 
+76: </p>
+77: 
+
+
+Une erreur s'est produite à la ligne: 74 dans le fichier jsp: /synthese.jsp
+Syntax error, insert ";" to complete Statement
+71: <p>
+72: 
+73: Entrée:</br><%out.println(libE)%></br>
+74: Description:</br><%out.println(desE)%></br>
+75: 
+76: </p>
+77: 
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 73 dans le fichier jsp: /synthese.jsp
+libE cannot be resolved to a variable
+70: 	}%>
+71: <p>
+72: 
+73: Entrée:</br><%out.println(libE)%></br>
+74: Description:</br><%out.println(desE)%></br>
+75: 
+76: </p>
+
+
+Une erreur s'est produite à la ligne: 73 dans le fichier jsp: /synthese.jsp
+Syntax error, insert ";" to complete Statement
+70: 	}%>
+71: <p>
+72: 
+73: Entrée:</br><%out.println(libE)%></br>
+74: Description:</br><%out.println(desE)%></br>
+75: 
+76: </p>
+
+
+Une erreur s'est produite à la ligne: 74 dans le fichier jsp: /synthese.jsp
+desE cannot be resolved to a variable
+71: <p>
+72: 
+73: Entrée:</br><%out.println(libE)%></br>
+74: Description:</br><%out.println(desE)%></br>
+75: 
+76: </p>
+77: 
+
+
+Une erreur s'est produite à la ligne: 74 dans le fichier jsp: /synthese.jsp
+Syntax error, insert ";" to complete Statement
+71: <p>
+72: 
+73: Entrée:</br><%out.println(libE)%></br>
+74: Description:</br><%out.println(desE)%></br>
+75: 
+76: </p>
+77: 
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+

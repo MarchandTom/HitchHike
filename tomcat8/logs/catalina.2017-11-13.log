@@ -1,0 +1,30 @@
+13-Nov-2017 13:18:40.355 INFO [main] org.apache.catalina.core.AprLifecycleListener.init The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+13-Nov-2017 13:18:40.509 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+13-Nov-2017 13:18:40.521 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+13-Nov-2017 13:18:40.523 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+13-Nov-2017 13:18:40.524 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+13-Nov-2017 13:18:40.524 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 374 ms
+13-Nov-2017 13:18:40.541 INFO [main] org.apache.catalina.core.StandardService.startInternal Démarrage du service Catalina
+13-Nov-2017 13:18:40.541 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.12
+13-Nov-2017 13:18:40.548 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire /home/infoetu/marchant/bdd/TP3.4b/tomcat8/webapps/ROOT de l'application web
+13-Nov-2017 13:18:40.737 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Nov-2017 13:18:40.781 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/infoetu/marchant/bdd/TP3.4b/tomcat8/webapps/ROOT has finished in 228 ms
+13-Nov-2017 13:18:40.781 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire /home/infoetu/marchant/bdd/TP3.4b/tomcat8/webapps/vide de l'application web
+13-Nov-2017 13:18:40.902 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Nov-2017 13:18:40.908 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/infoetu/marchant/bdd/TP3.4b/tomcat8/webapps/vide has finished in 126 ms
+13-Nov-2017 13:18:40.908 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire /home/infoetu/marchant/bdd/TP3.4b/tomcat8/webapps/manager de l'application web
+13-Nov-2017 13:18:40.970 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Nov-2017 13:18:40.974 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/infoetu/marchant/bdd/TP3.4b/tomcat8/webapps/manager has finished in 66 ms
+13-Nov-2017 13:18:40.974 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Déploiement du répertoire /home/infoetu/marchant/bdd/TP3.4b/tomcat8/webapps/host-manager de l'application web
+13-Nov-2017 13:18:41.031 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+13-Nov-2017 13:18:41.033 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory /home/infoetu/marchant/bdd/TP3.4b/tomcat8/webapps/host-manager has finished in 59 ms
+13-Nov-2017 13:18:41.035 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+13-Nov-2017 13:18:41.039 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+13-Nov-2017 13:18:41.039 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 515 ms
+13-Nov-2017 13:26:23.021 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+13-Nov-2017 13:26:23.072 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+13-Nov-2017 13:26:23.122 INFO [Thread-5] org.apache.catalina.core.StandardService.stopInternal Arrêt du service Catalina
+13-Nov-2017 13:26:23.141 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+13-Nov-2017 13:26:23.142 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+13-Nov-2017 13:26:23.142 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+13-Nov-2017 13:26:23.143 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]

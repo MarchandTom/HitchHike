@@ -1,0 +1,15 @@
+drop table users;
+
+CREATE TABLE users(
+	login TEXT,
+	mdp TEXT,
+	nom TEXT,
+	prenom TEXT,
+	role TEXT,
+	adresse TEXT,
+
+	CONSTRAINT pk_compte PRIMARY KEY(login)
+);
+
+insert into users values('marchant', 'moi', 'marchand', 'tom', 'admin', 'nowhere');
+insert into users values('personne', 'moi', 'bla', 'bla', 'visiteur', 'car');

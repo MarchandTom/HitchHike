@@ -1,0 +1,28 @@
+DROP TABLE personne;
+DROP TABLE produits;
+
+CREATE TABLE personne(
+	id INTEGER,
+	nom CHAR(15),
+	prenom CHAR(20)	
+);
+
+CREATE TABLE produits(
+	id INTEGER,
+	libelle CHAR(15),
+	prix INTEGER,
+	poids INTEGER,
+	couleur char(20)
+);
+
+insert into personne VALUES (01,'Marchand', 'Tom');
+insert into personne VALUES (02,'Bon', 'Antoine');
+insert into personne VALUES (03,'Blondeau', 'Antoine');
+insert into personne VALUES (04,'Ilienescu', 'Anca');
+insert into personne VALUES (05,'Deslaut', 'Juliette');
+
+insert into produits VALUES (01,'DS',50,1,'Blanc');
+insert into produits VALUES (02,'XBox1',500,50,'Noir');
+insert into produits VALUES (03,'PS4',400,10,'Noir');
+insert into produits VALUES (04,'DreamCast',250,5,'Blanc');
+insert into produits VALUES (05,'NES',1000,12,'Gris');

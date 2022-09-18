@@ -1,0 +1,15 @@
+0:0:0:0:0:0:0:1 - - [12/Jun/2018:11:01:30 +0100] "GET /vide/servlet/utilities/Select?table=Users HTTP/1.1" 200 2639
+0:0:0:0:0:0:0:1 - - [12/Jun/2018:11:01:31 +0100] "GET /favicon.ico HTTP/1.1" 200 21630
+0:0:0:0:0:0:0:1 - - [12/Jun/2018:19:43:22 +0100] "GET /vide/Index.jsp HTTP/1.1" 200 3523
+0:0:0:0:0:0:0:1 - - [12/Jun/2018:19:43:22 +0100] "GET /Ressources/auto-stop-homme.jpg HTTP/1.1" 200 1181221
+0:0:0:0:0:0:0:1 - - [12/Jun/2018:19:43:22 +0100] "GET /Ressources/Logo.png HTTP/1.1" 200 31405
+0:0:0:0:0:0:0:1 - - [12/Jun/2018:19:43:28 +0100] "GET /vide/Login.jsp HTTP/1.1" 200 4482
+0:0:0:0:0:0:0:1 - - [12/Jun/2018:19:43:37 +0100] "GET /vide/servlet/hitchhike/Authent?login=john&mdp=%3Bfdn HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [12/Jun/2018:19:43:37 +0100] "GET /vide/Login.jsp HTTP/1.1" 200 4482
+0:0:0:0:0:0:0:1 - - [12/Jun/2018:19:43:50 +0100] "GET /vide/servlet/hitchhike/Authent?login=marchant&mdp=ksdjhf HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [12/Jun/2018:19:43:50 +0100] "GET /vide/Login.jsp?login=marchant&error=password HTTP/1.1" 200 4570
+0:0:0:0:0:0:0:1 - - [12/Jun/2018:19:45:03 +0100] "GET /vide/Register.jsp HTTP/1.1" 200 5130
+0:0:0:0:0:0:0:1 - - [12/Jun/2018:19:45:33 +0100] "GET /vide/Signup.jsp?nom=Marchand&prenom=Tom&login=marchant&mdp=aze&mdpConf=aze&tel=0636663340&birthMonth=11&birthDay=26&birthYear=1998 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [12/Jun/2018:19:45:33 +0100] "GET /vide/Register.jsp?error=loginUsed&login=marchant&nom=MARCHAND&prenom=Tom&tel=0636663340&birthDay=26&birthMonth=11&birthYear=1998 HTTP/1.1" 200 5282
+0:0:0:0:0:0:0:1 - - [12/Jun/2018:19:46:21 +0100] "GET /vide/Signup.jsp?nom=MARCHAND&prenom=Tom&login=marchanta&mdp=aze&mdpConf=qsd&tel=0636663340&birthMonth=11&birthDay=26&birthYear=1998 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [12/Jun/2018:19:46:22 +0100] "GET /vide/Register.jsp?error=differentPassword&login=marchanta&nom=MARCHAND&prenom=Tom&tel=0636663340&birthDay=26&birthMonth=11&birthYear=1998 HTTP/1.1" 200 5361

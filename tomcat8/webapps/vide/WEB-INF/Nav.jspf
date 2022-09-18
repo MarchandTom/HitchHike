@@ -1,0 +1,108 @@
+<style>
+body{
+	background-image: url("./../../Ressources/auto-stop-homme.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+</style>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+	integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+	crossorigin="anonymous">
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <a class="navbar-brand" href="Index.jsp">
+    <img src="./../../Ressources/Logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    HitchHike
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <%String login=null;
+	String textLien;
+	Boolean logged=(Boolean)session.getAttribute( "logged" );
+  %>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="Index.jsp">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Redirect.jsp?url=YourRoute.jsp&lead=false">HitchHike</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Redirect.jsp?url=YourRoute.jsp&lead=true">Lead Someone</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Others
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+          <a class="dropdown-item" href="Redirect.jsp?url=ChooseHitch.jsp">Everyone</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="Redirect.jsp?url=ChooseHitch.jsp">See map</a>
+        </div>
+      </li>
+	<%
+		if(logged==null || !logged){
+			textLien="<a href=\"Login.jsp\">Log in/register</a>";
+		}else{
+			login=(String)session.getAttribute( "login" );
+			textLien=login+" (<a href=\"Logout.jsp\">Log out</a>)";
+		}
+	%>
+      <%if(logged!= null && logged){ %>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Account
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="RouteList.jsp">My routes</a>
+          <a class="dropdown-item" href="Messages.jsp" id="itemMessage">Messages</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="InfoUser.jsp?login=<%=login%>">My informations</a>
+        </div>
+      </li>
+      <%} %>
+    </ul>
+    <span class="navbar-text">
+	<%= textLien %>
+    </span>
+  </div>
+</nav>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+
+
+<%if(logged!=null && logged) {%>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script>
+	$(document).ready(checkForNotifications);
+	setInterval(checkForNotifications, 5000);
+	
+	function checkForNotifications(){
+	    $.ajax({
+	        url: "ReqAjax.jsp", 
+	        type: "GET",
+	        success: function( notification ) {
+	        	var tmp=notification.charAt(0);
+	        	if(tmp=='0'){
+		            document.getElementById("navbarDropdown").innerHTML="Account ";
+		            document.getElementById("itemMessage").innerHTML="Messages ";
+	        	}else{
+		            document.getElementById("navbarDropdown").innerHTML="Account ("+tmp+")";        		
+		            document.getElementById("itemMessage").innerHTML="Messages ("+tmp+")";        		
+	        	}
+	        },
+	        error: function(data){
+	            //handle any error 
+	        }
+	    });
+	}
+	
+	</script>
+
+<%} %>

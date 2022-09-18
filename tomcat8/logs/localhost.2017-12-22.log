@@ -1,0 +1,880 @@
+22-Dec-2017 09:17:55.575 SEVERE [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 17 dans le fichier jsp: /saisieAbsence.jsp
+PersonneDAO cannot be resolved to a type
+14: 		if(login==null){
+15: 			pno=Integer.valueOf(request.getParameter("pno"));
+16: 		}
+17: 		PersonneDAO pd = new PersonneDAO();
+18: 		if(pno==0){
+19: 			pno=pd.getPno(login);
+20: 		}else{
+
+
+Une erreur s'est produite à la ligne: 17 dans le fichier jsp: /saisieAbsence.jsp
+PersonneDAO cannot be resolved to a type
+14: 		if(login==null){
+15: 			pno=Integer.valueOf(request.getParameter("pno"));
+16: 		}
+17: 		PersonneDAO pd = new PersonneDAO();
+18: 		if(pno==0){
+19: 			pno=pd.getPno(login);
+20: 		}else{
+
+
+Une erreur s'est produite à la ligne: 23 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesDAO cannot be resolved to a type
+20: 		}else{
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+
+
+Une erreur s'est produite à la ligne: 23 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesDAO cannot be resolved to a type
+20: 		}else{
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesView cannot be resolved to a type
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+27: 	<%= s %>
+
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesView cannot be resolved to a type
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+27: 	<%= s %>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 17 dans le fichier jsp: /saisieAbsence.jsp
+PersonneDAO cannot be resolved to a type
+14: 		if(login==null){
+15: 			pno=Integer.valueOf(request.getParameter("pno"));
+16: 		}
+17: 		PersonneDAO pd = new PersonneDAO();
+18: 		if(pno==0){
+19: 			pno=pd.getPno(login);
+20: 		}else{
+
+
+Une erreur s'est produite à la ligne: 17 dans le fichier jsp: /saisieAbsence.jsp
+PersonneDAO cannot be resolved to a type
+14: 		if(login==null){
+15: 			pno=Integer.valueOf(request.getParameter("pno"));
+16: 		}
+17: 		PersonneDAO pd = new PersonneDAO();
+18: 		if(pno==0){
+19: 			pno=pd.getPno(login);
+20: 		}else{
+
+
+Une erreur s'est produite à la ligne: 23 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesDAO cannot be resolved to a type
+20: 		}else{
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+
+
+Une erreur s'est produite à la ligne: 23 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesDAO cannot be resolved to a type
+20: 		}else{
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesView cannot be resolved to a type
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+27: 	<%= s %>
+
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesView cannot be resolved to a type
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+27: 	<%= s %>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+22-Dec-2017 09:18:02.792 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 17 dans le fichier jsp: /saisieAbsence.jsp
+PersonneDAO cannot be resolved to a type
+14: 		if(login==null){
+15: 			pno=Integer.valueOf(request.getParameter("pno"));
+16: 		}
+17: 		PersonneDAO pd = new PersonneDAO();
+18: 		if(pno==0){
+19: 			pno=pd.getPno(login);
+20: 		}else{
+
+
+Une erreur s'est produite à la ligne: 17 dans le fichier jsp: /saisieAbsence.jsp
+PersonneDAO cannot be resolved to a type
+14: 		if(login==null){
+15: 			pno=Integer.valueOf(request.getParameter("pno"));
+16: 		}
+17: 		PersonneDAO pd = new PersonneDAO();
+18: 		if(pno==0){
+19: 			pno=pd.getPno(login);
+20: 		}else{
+
+
+Une erreur s'est produite à la ligne: 23 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesDAO cannot be resolved to a type
+20: 		}else{
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+
+
+Une erreur s'est produite à la ligne: 23 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesDAO cannot be resolved to a type
+20: 		}else{
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesView cannot be resolved to a type
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+27: 	<%= s %>
+
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesView cannot be resolved to a type
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+27: 	<%= s %>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 17 dans le fichier jsp: /saisieAbsence.jsp
+PersonneDAO cannot be resolved to a type
+14: 		if(login==null){
+15: 			pno=Integer.valueOf(request.getParameter("pno"));
+16: 		}
+17: 		PersonneDAO pd = new PersonneDAO();
+18: 		if(pno==0){
+19: 			pno=pd.getPno(login);
+20: 		}else{
+
+
+Une erreur s'est produite à la ligne: 17 dans le fichier jsp: /saisieAbsence.jsp
+PersonneDAO cannot be resolved to a type
+14: 		if(login==null){
+15: 			pno=Integer.valueOf(request.getParameter("pno"));
+16: 		}
+17: 		PersonneDAO pd = new PersonneDAO();
+18: 		if(pno==0){
+19: 			pno=pd.getPno(login);
+20: 		}else{
+
+
+Une erreur s'est produite à la ligne: 23 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesDAO cannot be resolved to a type
+20: 		}else{
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+
+
+Une erreur s'est produite à la ligne: 23 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesDAO cannot be resolved to a type
+20: 		}else{
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesView cannot be resolved to a type
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+27: 	<%= s %>
+
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesView cannot be resolved to a type
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+27: 	<%= s %>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+22-Dec-2017 09:19:11.751 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 17 dans le fichier jsp: /saisieAbsence.jsp
+PersonneDAO cannot be resolved to a type
+14: 		if(login==null){
+15: 			pno=Integer.valueOf(request.getParameter("pno"));
+16: 		}
+17: 		PersonneDAO pd = new PersonneDAO();
+18: 		if(pno==0){
+19: 			pno=pd.getPno(login);
+20: 		}else{
+
+
+Une erreur s'est produite à la ligne: 17 dans le fichier jsp: /saisieAbsence.jsp
+PersonneDAO cannot be resolved to a type
+14: 		if(login==null){
+15: 			pno=Integer.valueOf(request.getParameter("pno"));
+16: 		}
+17: 		PersonneDAO pd = new PersonneDAO();
+18: 		if(pno==0){
+19: 			pno=pd.getPno(login);
+20: 		}else{
+
+
+Une erreur s'est produite à la ligne: 23 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesDAO cannot be resolved to a type
+20: 		}else{
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+
+
+Une erreur s'est produite à la ligne: 23 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesDAO cannot be resolved to a type
+20: 		}else{
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesView cannot be resolved to a type
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+27: 	<%= s %>
+
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesView cannot be resolved to a type
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+27: 	<%= s %>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 17 dans le fichier jsp: /saisieAbsence.jsp
+PersonneDAO cannot be resolved to a type
+14: 		if(login==null){
+15: 			pno=Integer.valueOf(request.getParameter("pno"));
+16: 		}
+17: 		PersonneDAO pd = new PersonneDAO();
+18: 		if(pno==0){
+19: 			pno=pd.getPno(login);
+20: 		}else{
+
+
+Une erreur s'est produite à la ligne: 17 dans le fichier jsp: /saisieAbsence.jsp
+PersonneDAO cannot be resolved to a type
+14: 		if(login==null){
+15: 			pno=Integer.valueOf(request.getParameter("pno"));
+16: 		}
+17: 		PersonneDAO pd = new PersonneDAO();
+18: 		if(pno==0){
+19: 			pno=pd.getPno(login);
+20: 		}else{
+
+
+Une erreur s'est produite à la ligne: 23 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesDAO cannot be resolved to a type
+20: 		}else{
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+
+
+Une erreur s'est produite à la ligne: 23 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesDAO cannot be resolved to a type
+20: 		}else{
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesView cannot be resolved to a type
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+27: 	<%= s %>
+
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesView cannot be resolved to a type
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+27: 	<%= s %>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+22-Dec-2017 09:22:16.648 SEVERE [http-nio-8080-exec-6] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+An error occurred at line: [15] in the generated java file: [/home/infoetu/marchant/bdd/TP3.4b/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/saisieAbsence_jsp.java]
+Only a type can be imported. absence.PersonneDAO resolves to a package
+
+Une erreur s'est produite à la ligne: 17 dans le fichier jsp: /saisieAbsence.jsp
+PersonneDAO cannot be resolved to a type
+14: 		if(login==null){
+15: 			pno=Integer.valueOf(request.getParameter("pno"));
+16: 		}
+17: 		PersonneDAO pd = new PersonneDAO();
+18: 		if(pno==0){
+19: 			pno=pd.getPno(login);
+20: 		}else{
+
+
+Une erreur s'est produite à la ligne: 17 dans le fichier jsp: /saisieAbsence.jsp
+PersonneDAO cannot be resolved to a type
+14: 		if(login==null){
+15: 			pno=Integer.valueOf(request.getParameter("pno"));
+16: 		}
+17: 		PersonneDAO pd = new PersonneDAO();
+18: 		if(pno==0){
+19: 			pno=pd.getPno(login);
+20: 		}else{
+
+
+Une erreur s'est produite à la ligne: 23 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesDAO cannot be resolved to a type
+20: 		}else{
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+
+
+Une erreur s'est produite à la ligne: 23 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesDAO cannot be resolved to a type
+20: 		}else{
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesView cannot be resolved to a type
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+27: 	<%= s %>
+
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesView cannot be resolved to a type
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+27: 	<%= s %>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+An error occurred at line: [15] in the generated java file: [/home/infoetu/marchant/bdd/TP3.4b/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/saisieAbsence_jsp.java]
+Only a type can be imported. absence.PersonneDAO resolves to a package
+
+Une erreur s'est produite à la ligne: 17 dans le fichier jsp: /saisieAbsence.jsp
+PersonneDAO cannot be resolved to a type
+14: 		if(login==null){
+15: 			pno=Integer.valueOf(request.getParameter("pno"));
+16: 		}
+17: 		PersonneDAO pd = new PersonneDAO();
+18: 		if(pno==0){
+19: 			pno=pd.getPno(login);
+20: 		}else{
+
+
+Une erreur s'est produite à la ligne: 17 dans le fichier jsp: /saisieAbsence.jsp
+PersonneDAO cannot be resolved to a type
+14: 		if(login==null){
+15: 			pno=Integer.valueOf(request.getParameter("pno"));
+16: 		}
+17: 		PersonneDAO pd = new PersonneDAO();
+18: 		if(pno==0){
+19: 			pno=pd.getPno(login);
+20: 		}else{
+
+
+Une erreur s'est produite à la ligne: 23 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesDAO cannot be resolved to a type
+20: 		}else{
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+
+
+Une erreur s'est produite à la ligne: 23 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesDAO cannot be resolved to a type
+20: 		}else{
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesView cannot be resolved to a type
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+27: 	<%= s %>
+
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesView cannot be resolved to a type
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+27: 	<%= s %>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+22-Dec-2017 09:23:06.571 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesView cannot be resolved to a type
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+27: 	<%= s %>
+
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesView cannot be resolved to a type
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+27: 	<%= s %>
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesView cannot be resolved to a type
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+27: 	<%= s %>
+
+
+Une erreur s'est produite à la ligne: 24 dans le fichier jsp: /saisieAbsence.jsp
+AbsencesView cannot be resolved to a type
+21: 			login=pd.getLogin(pno);
+22: 		}
+23: 		AbsencesDAO ad=new AbsencesDAO();
+24: 		AbsencesView av=new AbsencesView();
+25: 		String s=av.getHTMLFormSaisie(pno, login);
+26: 	%>
+27: 	<%= s %>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+22-Dec-2017 10:58:53.603 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+An error occurred at line: [16] in the generated java file: [/home/infoetu/marchant/bdd/TP3.4b/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/saisieAbsence_jsp.java]
+The import AjoutAbsence cannot be resolved
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+An error occurred at line: [16] in the generated java file: [/home/infoetu/marchant/bdd/TP3.4b/tomcat8/work/Catalina/localhost/vide/org/apache/jsp/saisieAbsence_jsp.java]
+The import AjoutAbsence cannot be resolved
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+22-Dec-2017 11:05:05.471 INFO [http-nio-8080-exec-3] org.apache.catalina.core.ApplicationContext.log La servlet absences.AjoutAbsence est marqué comme indisponible
+22-Dec-2017 11:05:05.471 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Exception lors de l'allocation pour la servlet absences.AjoutAbsence
+ java.lang.ClassNotFoundException: absences.AjoutAbsence
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1320)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1173)
+	at org.apache.catalina.core.DefaultInstanceManager.loadClass(DefaultInstanceManager.java:550)
+	at org.apache.catalina.core.DefaultInstanceManager.loadClassMaybePrivileged(DefaultInstanceManager.java:531)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:150)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1105)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:827)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:135)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+22-Dec-2017 11:10:34.531 INFO [http-nio-8080-exec-2] org.apache.catalina.core.ApplicationContext.log La servlet absences.AjoutAbsence est marqué comme indisponible
+22-Dec-2017 11:10:34.531 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Exception lors de l'allocation pour la servlet absences.AjoutAbsence
+ java.lang.ClassNotFoundException: absences.AjoutAbsence
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1320)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1173)
+	at org.apache.catalina.core.DefaultInstanceManager.loadClass(DefaultInstanceManager.java:550)
+	at org.apache.catalina.core.DefaultInstanceManager.loadClassMaybePrivileged(DefaultInstanceManager.java:531)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:150)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1105)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:827)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:135)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+

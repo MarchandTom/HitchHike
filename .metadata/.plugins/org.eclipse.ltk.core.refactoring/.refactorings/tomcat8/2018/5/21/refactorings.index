@@ -1,0 +1,14 @@
+1527017616444	Delete element
+1527192789800	Move file
+1527193091960	Delete element
+1527256302464	Rename type 'AskValidations'
+1527256315166	Rename type 'AskValidationsDAO'
+1527260301604	Rename resource 'NewFile.jsp'
+1527263924266	Delete element
+1527462587159	Delete elements
+1527463194699	Delete elements
+1527463303204	Rename type 'AskValidation'
+1527463321671	Rename type 'AskValidationDAO'
+1527463336348	Rename type 'AskValidationView'
+1527463549286	Rename method 'addAskValidation'
+1527465057649	Rename method 'findByLogin'

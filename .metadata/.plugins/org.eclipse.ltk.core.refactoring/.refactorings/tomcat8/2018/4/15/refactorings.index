@@ -1,0 +1,9 @@
+1523378440733	Move 'catalogue.jsp' to 'classes'
+1523379538581	Move compilation unit
+1523379677784	Delete element
+1523450272449	Delete element
+1523715857427	Rename type 'Utilisateur'
+1523715867858	Rename type 'UtilisateurDAO'
+1523719692680	Rename local variable 'p'
+1523747279663	Extract method 'setDate'
+1523748983782	Rename resource 'NewFile.jsp'

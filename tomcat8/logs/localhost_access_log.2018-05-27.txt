@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [27/May/2018:23:47:50 +0100] "GET /vide/Index.jsp HTTP/1.1" 200 3595
+0:0:0:0:0:0:0:1 - - [27/May/2018:23:47:51 +0100] "GET /Ressources/Logo.png HTTP/1.1" 200 31405
+0:0:0:0:0:0:0:1 - - [27/May/2018:23:48:22 +0100] "GET /vide/Index.jsp HTTP/1.1" 200 3595
+0:0:0:0:0:0:0:1 - - [27/May/2018:23:48:22 +0100] "GET /favicon.ico HTTP/1.1" 200 21630
+0:0:0:0:0:0:0:1 - - [27/May/2018:23:48:25 +0100] "GET /vide/Redirect.jsp?url=YourRoute.jsp&lead=false HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [27/May/2018:23:48:26 +0100] "GET /vide/YourRoute.jsp HTTP/1.1" 200 3913
+0:0:0:0:0:0:0:1 - - [27/May/2018:23:48:27 +0100] "GET /vide/Index.jsp HTTP/1.1" 200 3595

@@ -1,0 +1,217 @@
+29-May-2018 18:34:35.336 SEVERE [http-nio-8080-exec-7] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 11 dans le fichier jsp: /Register.jsp
+The local variable error may not have been initialized
+8: </head>
+9: <body>
+10: <%@ include file="WEB-INF/Nav.jspf" %>
+11: <%String error=request.getParameter(error);
+12: String loginInput=request.getParameter("login");
+13: String nom=request.getParameter("nom").toUpperCase();
+14: String prenom=request.getParameter("prenom");
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 11 dans le fichier jsp: /Register.jsp
+The local variable error may not have been initialized
+8: </head>
+9: <body>
+10: <%@ include file="WEB-INF/Nav.jspf" %>
+11: <%String error=request.getParameter(error);
+12: String loginInput=request.getParameter("login");
+13: String nom=request.getParameter("nom").toUpperCase();
+14: String prenom=request.getParameter("prenom");
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+29-May-2018 18:36:33.399 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 12 dans le fichier jsp: /Register.jsp
+The local variable error may not have been initialized
+9: <body>
+10: <%@ include file="WEB-INF/Nav.jspf" %>
+11: <%
+12: String error=request.getParameter(error);
+13: String loginInput=request.getParameter("login");
+14: String nom=request.getParameter("nom").toUpperCase();
+15: String prenom=request.getParameter("prenom");
+
+
+Stacktrace:] with root cause
+ org.apache.jasper.JasperException: Impossible de compiler la classe pour la JSP: 
+
+Une erreur s'est produite à la ligne: 12 dans le fichier jsp: /Register.jsp
+The local variable error may not have been initialized
+9: <body>
+10: <%@ include file="WEB-INF/Nav.jspf" %>
+11: <%
+12: String error=request.getParameter(error);
+13: String loginInput=request.getParameter("login");
+14: String nom=request.getParameter("nom").toUpperCase();
+15: String prenom=request.getParameter("prenom");
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:199)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:446)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:361)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:336)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:323)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:564)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+29-May-2018 20:18:09.689 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [An exception occurred processing JSP page /Register.jsp at line 23
+
+20: <%
+21: error=request.getParameter("error");
+22: loginInput=request.getParameter("login");
+23: nom=request.getParameter("nom").toUpperCase();
+24: prenom=request.getParameter("prenom");
+25: tel=request.getParameter("tel");
+26: birthDay=request.getParameter("birthDay");
+
+
+Stacktrace:] with root cause
+ java.lang.NullPointerException
+	at org.apache.jsp.Register_jsp._jspService(Register_jsp.java:232)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+29-May-2018 21:59:42.642 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.session.StandardSession.doWriteObject Impossible de sérialiser l'attribut de session route pour la session 114F29529506416657FED397FFC81DA6
+ java.io.NotSerializableException: hitchhike.Adresse
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1184)
+	at java.io.ObjectOutputStream.defaultWriteFields(ObjectOutputStream.java:1548)
+	at java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1509)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1432)
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1178)
+	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:348)
+	at org.apache.catalina.session.StandardSession.doWriteObject(StandardSession.java:1710)
+	at org.apache.catalina.session.StandardSession.writeObjectData(StandardSession.java:1116)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:401)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:320)
+	at org.apache.catalina.session.StandardManager.stopInternal(StandardManager.java:487)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5388)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3768)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:293)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1377)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1349)
+	at java.lang.Thread.run(Thread.java:745)
+
+29-May-2018 21:59:42.643 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.session.StandardSession.doWriteObject Impossible de sérialiser l'attribut de session routeLead pour la session 114F29529506416657FED397FFC81DA6
+ java.io.NotSerializableException: hitchhike.Adresse
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1184)
+	at java.io.ObjectOutputStream.defaultWriteFields(ObjectOutputStream.java:1548)
+	at java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1509)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1432)
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1178)
+	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:348)
+	at org.apache.catalina.session.StandardSession.doWriteObject(StandardSession.java:1710)
+	at org.apache.catalina.session.StandardSession.writeObjectData(StandardSession.java:1116)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:401)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:320)
+	at org.apache.catalina.session.StandardManager.stopInternal(StandardManager.java:487)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5388)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3768)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:293)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1377)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1349)
+	at java.lang.Thread.run(Thread.java:745)
+

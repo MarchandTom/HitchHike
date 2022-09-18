@@ -1,0 +1,9 @@
+0:0:0:0:0:0:0:1 - - [17/Jun/2018:17:23:28 +0100] "GET /vide/Index.jsp HTTP/1.1" 200 3523
+0:0:0:0:0:0:0:1 - - [17/Jun/2018:17:23:28 +0100] "GET /Ressources/Logo.png HTTP/1.1" 200 31405
+0:0:0:0:0:0:0:1 - - [17/Jun/2018:17:23:28 +0100] "GET /Ressources/auto-stop-homme.jpg HTTP/1.1" 200 1181221
+0:0:0:0:0:0:0:1 - - [17/Jun/2018:17:23:30 +0100] "GET /vide/Redirect.jsp?url=YourRoute.jsp&lead=false HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [17/Jun/2018:17:23:30 +0100] "GET /vide/YourRoute.jsp HTTP/1.1" 200 4375
+0:0:0:0:0:0:0:1 - - [17/Jun/2018:17:24:02 +0100] "GET /vide/LoadRoute.jsp?inputOrigin=571+Sauchiehall+Street%2C+Glasgow%2C+UK&inputDestination=49+Reidvale+Street%2C+Glasgow%2C+UK&nbrPers=1 HTTP/1.1" 200 6064
+0:0:0:0:0:0:0:1 - - [17/Jun/2018:22:23:52 +0100] "GET /vide/Index.jsp HTTP/1.1" 200 3523
+0:0:0:0:0:0:0:1 - - [17/Jun/2018:22:23:53 +0100] "GET /Ressources/Logo.png HTTP/1.1" 200 31405
+0:0:0:0:0:0:0:1 - - [17/Jun/2018:22:23:53 +0100] "GET /Ressources/auto-stop-homme.jpg HTTP/1.1" 200 1181221

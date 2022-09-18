@@ -1,0 +1,232 @@
+28-May-2018 00:21:45.193 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.session.StandardSession.doWriteObject Impossible de sérialiser l'attribut de session route pour la session CD99A4E369B81BF27DA7CEFC8FF1F03E
+ java.io.NotSerializableException: hitchhike.Adresse
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1184)
+	at java.io.ObjectOutputStream.defaultWriteFields(ObjectOutputStream.java:1548)
+	at java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1509)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1432)
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1178)
+	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:348)
+	at org.apache.catalina.session.StandardSession.doWriteObject(StandardSession.java:1710)
+	at org.apache.catalina.session.StandardSession.writeObjectData(StandardSession.java:1116)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:401)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:320)
+	at org.apache.catalina.session.StandardManager.stopInternal(StandardManager.java:487)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5388)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3768)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:293)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1377)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1349)
+	at java.lang.Thread.run(Thread.java:745)
+
+28-May-2018 00:30:36.234 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.session.StandardSession.doWriteObject Impossible de sérialiser l'attribut de session route pour la session 1F58146E1E8F3F8091C0635A36939962
+ java.io.NotSerializableException: hitchhike.Adresse
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1184)
+	at java.io.ObjectOutputStream.defaultWriteFields(ObjectOutputStream.java:1548)
+	at java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1509)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1432)
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1178)
+	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:348)
+	at org.apache.catalina.session.StandardSession.doWriteObject(StandardSession.java:1710)
+	at org.apache.catalina.session.StandardSession.writeObjectData(StandardSession.java:1116)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:401)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:320)
+	at org.apache.catalina.session.StandardManager.stopInternal(StandardManager.java:487)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5388)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3768)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:293)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1377)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1349)
+	at java.lang.Thread.run(Thread.java:745)
+
+28-May-2018 00:30:36.235 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.session.StandardSession.doWriteObject Impossible de sérialiser l'attribut de session routeLead pour la session 1F58146E1E8F3F8091C0635A36939962
+ java.io.NotSerializableException: hitchhike.Adresse
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1184)
+	at java.io.ObjectOutputStream.defaultWriteFields(ObjectOutputStream.java:1548)
+	at java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1509)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1432)
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1178)
+	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:348)
+	at org.apache.catalina.session.StandardSession.doWriteObject(StandardSession.java:1710)
+	at org.apache.catalina.session.StandardSession.writeObjectData(StandardSession.java:1116)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:401)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:320)
+	at org.apache.catalina.session.StandardManager.stopInternal(StandardManager.java:487)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5388)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3768)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:293)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1377)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1349)
+	at java.lang.Thread.run(Thread.java:745)
+
+28-May-2018 01:27:09.179 SEVERE [http-nio-8080-exec-131] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [An exception occurred processing JSP page /InfoUser.jsp at line 27
+
+24: UserDAO uDAO=new UserDAO();
+25: %>
+26: 
+27: <%=uview.getDetail(uDAO.findByLogin(loginUser)) %>
+28: 
+29: 
+30: 
+
+
+Stacktrace:] with root cause
+ java.lang.NullPointerException
+	at hitchhike.UserView.getDetail(UserView.java:47)
+	at org.apache.jsp.InfoUser_jsp._jspService(InfoUser_jsp.java:235)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+28-May-2018 01:29:38.467 SEVERE [http-nio-8080-exec-130] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [An exception occurred processing JSP page /InfoUser.jsp at line 27
+
+24: UserDAO uDAO=new UserDAO();
+25: %>
+26: 
+27: <%=uview.getDetail(uDAO.findByLogin(loginUser)) %>
+28: 
+29: 
+30: 
+
+
+Stacktrace:] with root cause
+ java.lang.NullPointerException
+	at hitchhike.UserView.getDetail(UserView.java:47)
+	at org.apache.jsp.InfoUser_jsp._jspService(InfoUser_jsp.java:234)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+28-May-2018 01:31:04.268 SEVERE [http-nio-8080-exec-129] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/vide] threw exception [An exception occurred processing JSP page /InfoUser.jsp at line 27
+
+24: UserDAO uDAO=new UserDAO();
+25: %>
+26: 
+27: <%=uview.getDetail(uDAO.findByLogin(loginUser)) %>
+28: 
+29: 
+30: 
+
+
+Stacktrace:] with root cause
+ java.lang.NullPointerException
+	at hitchhike.UserView.getDetail(UserView.java:47)
+	at org.apache.jsp.InfoUser_jsp._jspService(InfoUser_jsp.java:234)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:391)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:335)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:725)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:291)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:239)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:505)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:142)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:610)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:534)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1081)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:658)
+	at org.apache.coyote.http11.Http11NioProtocol$Http11ConnectionHandler.process(Http11NioProtocol.java:222)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1566)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1523)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+28-May-2018 21:19:38.645 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.session.StandardSession.doWriteObject Impossible de sérialiser l'attribut de session route pour la session A1AAEFDA63DADDF62A93789CEB150229
+ java.io.NotSerializableException: hitchhike.Adresse
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1184)
+	at java.io.ObjectOutputStream.defaultWriteFields(ObjectOutputStream.java:1548)
+	at java.io.ObjectOutputStream.writeSerialData(ObjectOutputStream.java:1509)
+	at java.io.ObjectOutputStream.writeOrdinaryObject(ObjectOutputStream.java:1432)
+	at java.io.ObjectOutputStream.writeObject0(ObjectOutputStream.java:1178)
+	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:348)
+	at org.apache.catalina.session.StandardSession.doWriteObject(StandardSession.java:1710)
+	at org.apache.catalina.session.StandardSession.writeObjectData(StandardSession.java:1116)
+	at org.apache.catalina.session.StandardManager.doUnload(StandardManager.java:401)
+	at org.apache.catalina.session.StandardManager.unload(StandardManager.java:320)
+	at org.apache.catalina.session.StandardManager.stopInternal(StandardManager.java:487)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5388)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:3768)
+	at org.apache.catalina.loader.WebappLoader.backgroundProcess(WebappLoader.java:293)
+	at org.apache.catalina.core.StandardContext.backgroundProcess(StandardContext.java:5530)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1377)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1381)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1349)
+	at java.lang.Thread.run(Thread.java:745)
+

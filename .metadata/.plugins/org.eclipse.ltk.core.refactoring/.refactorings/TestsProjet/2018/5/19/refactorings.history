@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;TestsProjet/src/Carte.html&apos; to &apos;Carte2pts.html&apos;" description="Rename resource &apos;Carte.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/Carte.html" name="Carte2pts.html" stamp="1525817846839" updateReferences="true"/>
+</session>

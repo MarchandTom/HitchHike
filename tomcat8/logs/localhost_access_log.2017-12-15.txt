@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [15/Dec/2017:09:45:24 +0100] "GET /vide/servlet/Select?table=personne HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [15/Dec/2017:09:45:24 +0100] "GET /vide/Login.html HTTP/1.1" 200 598
+0:0:0:0:0:0:0:1 - - [15/Dec/2017:09:45:25 +0100] "GET /favicon.ico HTTP/1.1" 200 21630
+0:0:0:0:0:0:0:1 - - [15/Dec/2017:09:45:30 +0100] "POST /vide/servlet/Authent HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [15/Dec/2017:09:45:30 +0100] "GET /vide/servlet/Select?table=personne HTTP/1.1" 200 1151
+0:0:0:0:0:0:0:1 - - [15/Dec/2017:09:46:05 +0100] "POST /vide/servlet/Insert?table=personne HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [15/Dec/2017:09:46:05 +0100] "GET /vide/servlet/Select?table=personne HTTP/1.1" 200 1151
+0:0:0:0:0:0:0:1 - - [15/Dec/2017:09:46:10 +0100] "GET /vide/servlet/Select?table=personne HTTP/1.1" 200 1151

@@ -1,0 +1,11 @@
+0:0:0:0:0:0:0:1 - - [16/Jun/2018:01:54:00 +0100] "GET /vide/Index.jsp HTTP/1.1" 200 3523
+0:0:0:0:0:0:0:1 - - [16/Jun/2018:01:54:00 +0100] "GET /Ressources/Logo.png HTTP/1.1" 200 31405
+0:0:0:0:0:0:0:1 - - [16/Jun/2018:01:54:00 +0100] "GET /Ressources/auto-stop-homme.jpg HTTP/1.1" 200 1181221
+0:0:0:0:0:0:0:1 - - [16/Jun/2018:01:54:02 +0100] "GET /vide/Redirect.jsp?url=YourRoute.jsp&lead=false HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [16/Jun/2018:01:54:02 +0100] "GET /vide/YourRoute.jsp HTTP/1.1" 200 4375
+0:0:0:0:0:0:0:1 - - [16/Jun/2018:01:54:11 +0100] "GET /vide/LoadRoute.jsp?inputOrigin=Seclin%2C+France&inputDestination=Paris%2C+France&nbrPers=1 HTTP/1.1" 200 5943
+0:0:0:0:0:0:0:1 - - [16/Jun/2018:01:54:20 +0100] "GET /vide/LoadRoute.jsp?inputOrigin=Seclin%2C+France&nbrPers=1 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [16/Jun/2018:01:54:20 +0100] "GET /vide/YourRoute.jsp?origin=Seclin,%20France&destination=null&error=Adresse2 HTTP/1.1" 200 4527
+0:0:0:0:0:0:0:1 - - [16/Jun/2018:02:23:52 +0100] "GET /vide/Index.jsp HTTP/1.1" 200 3523
+0:0:0:0:0:0:0:1 - - [16/Jun/2018:02:38:59 +0100] "GET /vide/Redirect.jsp?url=YourRoute.jsp&lead=false HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [16/Jun/2018:02:38:59 +0100] "GET /vide/YourRoute.jsp HTTP/1.1" 200 4375

@@ -1,0 +1,16 @@
+0:0:0:0:0:0:0:1 - - [11/Apr/2018:13:47:55 +0100] "GET /vide/servlet/SQLiteTest HTTP/1.1" 404 1051
+0:0:0:0:0:0:0:1 - - [11/Apr/2018:13:48:11 +0100] "GET /vide/SQLiteTest HTTP/1.1" 404 1035
+0:0:0:0:0:0:0:1 - - [11/Apr/2018:13:48:37 +0100] "GET /vide/test.html HTTP/1.1" 200 773
+0:0:0:0:0:0:0:1 - - [11/Apr/2018:13:48:44 +0100] "GET /vide/servlet/Test HTTP/1.1" 404 1039
+0:0:0:0:0:0:0:1 - - [11/Apr/2018:13:49:09 +0100] "GET /vide/servlet/Authent HTTP/1.1" 200 337
+0:0:0:0:0:0:0:1 - - [11/Apr/2018:13:49:17 +0100] "GET /vide/servlet/SQLiteTest HTTP/1.1" 404 1051
+0:0:0:0:0:0:0:1 - - [11/Apr/2018:13:51:58 +0100] "GET /vide/servlet/SQLiteTest HTTP/1.1" 404 1051
+0:0:0:0:0:0:0:1 - - [11/Apr/2018:13:52:08 +0100] "GET /vide/servlet/Lister HTTP/1.1" 200 419
+0:0:0:0:0:0:0:1 - - [11/Apr/2018:13:52:18 +0100] "GET /vide/servlet/Update HTTP/1.1" 200 331
+0:0:0:0:0:0:0:1 - - [11/Apr/2018:13:52:37 +0100] "GET /vide/servlet/SQLiteTest HTTP/1.1" 404 1051
+0:0:0:0:0:0:0:1 - - [11/Apr/2018:13:54:30 +0100] "GET /vide/servlet/SQLiteTest HTTP/1.1" 405 1149
+0:0:0:0:0:0:0:1 - - [11/Apr/2018:13:55:29 +0100] "GET /vide/servlet/SQLiteTest HTTP/1.1" 405 1149
+0:0:0:0:0:0:0:1 - - [11/Apr/2018:14:01:02 +0100] "GET /vide/servlet/SQLiteTest HTTP/1.1" 200 417
+0:0:0:0:0:0:0:1 - - [11/Apr/2018:14:02:23 +0100] "GET /vide/servlet/SQLiteTest HTTP/1.1" 200 417
+0:0:0:0:0:0:0:1 - - [11/Apr/2018:14:06:46 +0100] "GET /vide/servlet/SQLiteTest HTTP/1.1" 200 417
+0:0:0:0:0:0:0:1 - - [11/Apr/2018:14:17:13 +0100] "GET /vide/servlet/SQLiteTest HTTP/1.1" 200 417
